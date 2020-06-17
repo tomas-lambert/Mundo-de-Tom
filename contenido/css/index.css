@@ -1,0 +1,124 @@
+header, footer {
+  background-color: #ddfbfa; }
+  header div, footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    transition: 1s; }
+    header div a, footer div a {
+      font-family: "Montserrat", sans-serif;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: bold;
+      color: #1b1c1c;
+      margin: 5px; }
+    header div a:hover, footer div a:hover {
+      margin: 5px;
+      font-family: "Montserrat", sans-serif;
+      text-decoration-line: underline;
+      font-weight: bold;
+      color: #3ea968; }
+  header nav ul, footer nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none; }
+    header nav ul li, footer nav ul li {
+      display: inline-block; }
+      header nav ul li a, footer nav ul li a {
+        display: block;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: #1b1c1c;
+        margin: 5px;
+        font-weight: bold; }
+
+.section1 {
+  height: 100vh;
+  background-image: url(../multimedia/portada-index.jpg);
+  background-size: contain;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse; }
+  .section1 .portada-title {
+    display: flex;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 10vw;
+    margin-bottom: 20vh; }
+    .section1 .portada-title h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 58px;
+      font-weight: bold;
+      color: white; }
+
+.section2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 1fr 1fr 1fr;
+  grid-template-areas: "box1 box2" "box4 box3" "box5 box6";
+  background: #2db2b2;
+  background: -moz-linear-gradient(45deg, #2db2b2 0%, #2db2b2 0%, #ddfbfa 71%, #ddfbfa 86%, white 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #2db2b2), color-stop(0%, #2db2b2), color-stop(71%, #ddfbfa), color-stop(86%, #ddfbfa), color-stop(100%, white));
+  background: -webkit-linear-gradient(45deg, #2db2b2 0%, #2db2b2 0%, #ddfbfa 71%, #ddfbfa 86%, white 100%);
+  background: -o-linear-gradient(45deg, #2db2b2 0%, #2db2b2 0%, #ddfbfa 71%, #ddfbfa 86%, white 100%);
+  background: -ms-linear-gradient(45deg, #2db2b2 0%, #2db2b2 0%, #ddfbfa 71%, #ddfbfa 86%, white 100%);
+  background: linear-gradient(45deg, #2db2b2 0%, #2db2b2 0%, #ddfbfa 71%, #ddfbfa 86%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2db2b2', endColorstr='#ffffff', GradientType=1 ); }
+
+.imgfondo2 {
+  display: grid;
+  grid-area: box1;
+  background-image: url(../multimedia/placa-fondo-izquierda.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 5px; }
+
+.text2, .text3, .text4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.img2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: box2;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-left: 100px;
+  margin-right: 100px; }
+
+.imgfondo3 {
+  display: grid;
+  grid-area: box3;
+  background-image: url(../multimedia/placa-fondo-derecha.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 5px; }
+
+.img3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: box4; }
+
+.imgfondo4 {
+  display: grid;
+  grid-area: box5;
+  background-image: url(../multimedia/placa-fondo-izquierda.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: contain;
+  padding: 5px; }
+
+.img4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: box6; }

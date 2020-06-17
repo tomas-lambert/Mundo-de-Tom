@@ -1,0 +1,34 @@
+body {
+  font-family: 'Merriweather', serif;
+  font-weight: lighter; }
+
+header, footer {
+  background-color: #ddfbfa; }
+  header div, footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header div a, footer div a {
+      text-decoration: none;
+      color: #2db2b2; }
+  header nav ul, footer nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none; }
+    header nav ul li, footer nav ul li {
+      display: inline-block; }
+      header nav ul li a, footer nav ul li a {
+        display: block;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: #2db2b2; }
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+#comments {
+  width: 227px;
+  height: 176px; }

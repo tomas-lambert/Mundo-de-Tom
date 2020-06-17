@@ -1,0 +1,146 @@
+$color-claro: #ddfbfa;
+$color-oscuro: #2db2b2;
+$color-green: #3ea968;
+$color-black: #1b1c1c;
+$font-title:'Montserrat', sans-serif;
+$font-text:'Oswald', sans-serif;
+
+header, footer {
+    background-color: $color-claro;
+    div {
+        display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    	padding: 1.5rem;
+    	transition: 1s;
+        a { 
+            font-family: $font-title;  
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            color: $color-black;
+            margin: 5px;
+        }
+        a:hover {
+            margin: 5px;
+            font-family: $font-title;
+            text-decoration-line: underline;
+            font-weight: bold;
+            color: $color-green;
+            
+        }
+    }
+    nav {
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            li {
+                display: inline-block;
+                a {
+                   display: block; 
+                   padding: 0.5rem 1rem;
+                   text-decoration: none;
+                   color: $color-black;
+                   margin: 5px;
+                   font-weight: bold;
+                }
+                
+            }
+        }
+    }
+}
+.section1 {
+    height: 92vh;
+    background-image: url(../multimedia/portada-index.jpg);
+    background-size: contain;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    .portada-title {
+        display: flex;
+        padding: 10px;
+        display: inline-block;
+        margin-right: 10vw;
+        margin-bottom: 20vh;
+        h1 {
+            font-family: $font-title;
+            font-size: 58px;
+            font-weight: bold;
+            color: white;
+        }
+    }
+}
+.section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+    grid-template-areas: "box1 box2"
+                         "box4 box3"
+                         "box5 box6";
+    background: rgba(45,178,178,1);
+    background: -moz-linear-gradient(45deg, rgba(45,178,178,1) 0%, rgba(45,178,178,1) 0%, rgba(221,251,250,1) 71%, rgba(221,251,250,1) 86%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(45,178,178,1)), color-stop(0%, rgba(45,178,178,1)), color-stop(71%, rgba(221,251,250,1)), color-stop(86%, rgba(221,251,250,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(45deg, rgba(45,178,178,1) 0%, rgba(45,178,178,1) 0%, rgba(221,251,250,1) 71%, rgba(221,251,250,1) 86%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(45,178,178,1) 0%, rgba(45,178,178,1) 0%, rgba(221,251,250,1) 71%, rgba(221,251,250,1) 86%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(45,178,178,1) 0%, rgba(45,178,178,1) 0%, rgba(221,251,250,1) 71%, rgba(221,251,250,1) 86%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(45deg, rgba(45,178,178,1) 0%, rgba(45,178,178,1) 0%, rgba(221,251,250,1) 71%, rgba(221,251,250,1) 86%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2db2b2', endColorstr='#ffffff', GradientType=1 );
+}
+.imgfondo2 {
+    display: grid;
+    grid-area: box1;
+    background-image: url(../multimedia/placa-fondo-izquierda.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    padding: 5px;
+}
+.text2, .text3, .text4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+ .img2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: box2;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 100px;
+    margin-right: 100px;
+ }
+.imgfondo3 {
+    display: grid;
+    grid-area: box3;
+    background-image: url(../multimedia/placa-fondo-derecha.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 5px;
+}
+ .img3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: box4;
+}
+.imgfondo4 {
+    display: grid;
+    grid-area: box5;
+    background-image: url(../multimedia/placa-fondo-izquierda.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: contain;
+    padding: 5px;
+}
+ .img4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: box6;
+}

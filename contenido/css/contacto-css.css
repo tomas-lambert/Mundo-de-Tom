@@ -1,0 +1,32 @@
+body {
+	font-family: 'Merriweather', serif;
+	font-weight: lighter;
+}
+header,footer {
+	background: #d7f7f5;
+}
+header a,footer a {
+	color: #2a6171;
+	text-decoration: none;
+}
+div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav ul li {
+	display: inline-block;
+}
+nav ul li a {
+	display: block;
+	padding: 0.5rem 1rem
+}
+
+h1,h2 {
+	font-family: 'Oswald', sans-serif;
+}

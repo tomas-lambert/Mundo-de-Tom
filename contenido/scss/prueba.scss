@@ -1,0 +1,48 @@
+$color-claro: #ddfbfa;
+$color-oscuro: #2db2b2;
+$color-green: #3ea968;
+$color-black: #1b1c1c;
+
+body {
+	font-family: 'Merriweather', serif;
+    font-weight: lighter;
+}
+
+header, footer {
+    background-color: $color-claro;
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {   
+            text-decoration: none;
+            color: $color-oscuro;
+        }
+    }
+    nav {
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            li {
+                display: inline-block;
+                a {
+                   display: block; 
+                   padding: 0.5rem 1rem;
+                   text-decoration: none;
+                   color: $color-oscuro;
+                }
+            }
+        }
+    }
+}
+section {
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#comments {
+    width: 227px;
+    height: 176px;
+}

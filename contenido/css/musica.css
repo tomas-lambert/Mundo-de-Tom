@@ -1,0 +1,109 @@
+header, footer {
+  background-color: #ddfbfa; }
+  header div, footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s; }
+    header div a, footer div a {
+      font-family: "Montserrat", sans-serif;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      color: #1b1c1c;
+      margin: 5px; }
+    header div a:hover, footer div a:hover {
+      margin: 5px;
+      font-family: "Montserrat", sans-serif;
+      text-decoration-line: underline;
+      font-weight: bold;
+      color: #3ea968; }
+  header nav ul, footer nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none; }
+    header nav ul li, footer nav ul li {
+      display: inline-block; }
+      header nav ul li a, footer nav ul li a {
+        display: block;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: #1b1c1c;
+        margin: 5px;
+        font-weight: bold; }
+
+.section1 {
+  height: 92vh;
+  background-image: url(../multimedia/guitarra.jpg);
+  background-size: contain;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse; }
+  .section1 .portada-title {
+    display: flex;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 10vw;
+    margin-bottom: 20vh; }
+    .section1 .portada-title h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 58px;
+      font-weight: bold;
+      color: white; }
+
+.section2 {
+  height: 92vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas: "galerias audios" "galerias-contain audios-contain";
+  background: #2db2b2;
+  background: -moz-linear-gradient(45deg, #2db2b2 0%, #2db2b2 0%, #ddfbfa 71%, #ddfbfa 86%, white 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #2db2b2), color-stop(0%, #2db2b2), color-stop(71%, #ddfbfa), color-stop(86%, #ddfbfa), color-stop(100%, white));
+  background: -webkit-linear-gradient(45deg, #2db2b2 0%, #2db2b2 0%, #ddfbfa 71%, #ddfbfa 86%, white 100%);
+  background: -o-linear-gradient(45deg, #2db2b2 0%, #2db2b2 0%, #ddfbfa 71%, #ddfbfa 86%, white 100%);
+  background: -ms-linear-gradient(45deg, #2db2b2 0%, #2db2b2 0%, #ddfbfa 71%, #ddfbfa 86%, white 100%);
+  background: linear-gradient(45deg, #2db2b2 0%, #2db2b2 0%, #ddfbfa 71%, #ddfbfa 86%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2db2b2', endColorstr='#ffffff', GradientType=1 ); }
+  .section2 .audios-contain {
+    grid-area: audios-contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .section2 .audios-contain .audios {
+      grid-area: audios; }
+
+.galerias {
+  grid-area: galerias; }
+
+.galerias-contain {
+  grid-area: galerias-contain;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "img1 img2 img3" "img4 img5 img6"; }
+
+.img1 {
+  grid-area: img1;
+  background-color: green; }
+
+.img2 {
+  grid-area: img2;
+  background-color: blue; }
+
+.img3 {
+  grid-area: img3;
+  background-color: red; }
+
+.img4 {
+  grid-area: img4;
+  background-color: sandybrown; }
+
+.img5 {
+  grid-area: img5;
+  background-color: skyblue; }
+
+.img6 {
+  grid-area: img6;
+  background-color: tomato; }

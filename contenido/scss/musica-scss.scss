@@ -1,0 +1,135 @@
+$color-claro: #ddfbfa;
+$color-oscuro: #2db2b2;
+$color-green: #3ea968;
+$color-black: #1b1c1c;
+$font-title:'Montserrat', sans-serif;
+$font-text:'Oswald', sans-serif;
+
+header, footer {
+    background-color: $color-claro;
+    div {
+        display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    	transition: 1s;
+        a { 
+            font-family: $font-title;  
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            color: $color-black;
+            margin: 5px;
+        }
+        a:hover {
+            margin: 5px;
+            font-family: $font-title;
+            text-decoration-line: underline;
+            font-weight: bold;
+            color: $color-green;
+            
+        }
+    }
+    nav {
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            li {
+                display: inline-block;
+                a {
+                   display: block; 
+                   padding: 0.5rem 1rem;
+                   text-decoration: none;
+                   color: $color-black;
+                   margin: 5px;
+                   font-weight: bold;
+                }
+                
+            }
+        }
+    }
+}
+.section1 {
+    height: 92vh;
+    background-image: url(../multimedia/guitarra.jpg);
+    background-size: contain;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    .portada-title {
+        display: flex;
+        padding: 10px;
+        display: inline-block;
+        margin-right: 10vw;
+        margin-bottom: 20vh;
+        h1 {
+            font-family: $font-title;
+            font-size: 58px;
+            font-weight: bold;
+            color: white;
+        }
+    }
+}
+.section2 {
+    height: 92vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas:"galerias audios"
+                        "galerias-contain audios-contain";
+    background: rgba(45,178,178,1);
+    background: -moz-linear-gradient(45deg, rgba(45,178,178,1) 0%, rgba(45,178,178,1) 0%, rgba(221,251,250,1) 71%, rgba(221,251,250,1) 86%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(45,178,178,1)), color-stop(0%, rgba(45,178,178,1)), color-stop(71%, rgba(221,251,250,1)), color-stop(86%, rgba(221,251,250,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(45deg, rgba(45,178,178,1) 0%, rgba(45,178,178,1) 0%, rgba(221,251,250,1) 71%, rgba(221,251,250,1) 86%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(45,178,178,1) 0%, rgba(45,178,178,1) 0%, rgba(221,251,250,1) 71%, rgba(221,251,250,1) 86%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(45,178,178,1) 0%, rgba(45,178,178,1) 0%, rgba(221,251,250,1) 71%, rgba(221,251,250,1) 86%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(45deg, rgba(45,178,178,1) 0%, rgba(45,178,178,1) 0%, rgba(221,251,250,1) 71%, rgba(221,251,250,1) 86%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2db2b2', endColorstr='#ffffff', GradientType=1 );
+    
+    .audios-contain {
+        grid-area: audios-contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .audios {
+            grid-area: audios;
+        }
+     }
+}
+.galerias {
+    grid-area: galerias;
+}
+.galerias-contain{
+    grid-area: galerias-contain;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:"img1 img2 img3"
+                        "img4 img5 img6";
+}
+
+.img1{
+    grid-area:img1 ;
+    background-color: green;
+}
+.img2{
+    grid-area:img2 ;
+    background-color: blue;
+}
+.img3{
+    grid-area:img3 ;
+    background-color: red;
+}
+.img4{
+    grid-area:img4 ;
+    background-color: sandybrown;
+}
+.img5{
+    grid-area:img5 ;
+    background-color: skyblue;
+}
+.img6{
+    grid-area:img6 ;
+    background-color: tomato;
+}
